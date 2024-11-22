@@ -1,4 +1,3 @@
-# Playing-with-GOlang-CRUD-operations-
 # Go CRUD API: A Personal Learning Project
 
 ![Project Image](images/go_crud_project.png)
