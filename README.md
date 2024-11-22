@@ -72,6 +72,23 @@ The Go application will automatically create the required `users` table if it do
 
 ![Update User Image](images/update_user.png)
 
+### Update User
+- **URL**: `http://localhost:8080/user`
+- **Method**: PUT
+- **Headers**: `Content-Type: application/json`
+- **Body**:
+  ```json
+  {
+    "username": "johndoe",
+    "password": "newpassword123",
+    "age": 35
+  }
+  ```
+- **Description**: Updates an existing user's information (username, password, or age). After the update, any previous credentials (old username or password) will no longer be valid for accessing the user. Attempting to use old credentials for `GET` will result in an "Invalid username or password" error.
+- **Response**: Returns `200 OK` and a success message if the user is updated successfully.
+
+![Update User Image](images/update_user.png)
+
 ## CRUD Endpoints
 
 ### Health Check
